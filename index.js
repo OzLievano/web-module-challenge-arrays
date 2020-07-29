@@ -115,11 +115,15 @@ Hint: You can use .splice() for this
 
 */
 
-function removeFlavorByName(/*code here*/){
+// for string enter a flavor
+function removeFlavorByName(array,stringFlavor){
 
-    /*code here*/
-
+//splice = index , what to remove , other item to remove 
+    array.splice(array.indexOf(stringFlavor,stringFlavor));
+    return array;
 }
+    
+console.log(removeFlavorByName(originalFlavors,"Vanilla"))
 
 
 /* Task 6: With all of these changes going on, we don't want to lose track of the actual, original 31 flavors. Write a function called copy that makes a copy of the array. 
