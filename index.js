@@ -157,11 +157,18 @@ DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 
 hint - you can use the .includes method to help you solve this */
 
-function filterByWord(/*code here*/){
+let choc_array = [];
 
-    /*code here*/
-
+function filterByWord(array,flavorString){
+  for(let i=0; i < array.length;i++){
+    if(array[i].includes(flavorString)){
+      choc_array.push(array[i]);
+    }
+    }
+  return choc_array;
 }
+
+console.log(filterByWord(originalFlavors,"Chocolate"));
 
 
 
